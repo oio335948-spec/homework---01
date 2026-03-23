@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* CSS styles for the webpage: 
+        - The body has a light gray background, uses the Arial font, and centers its content.
+        */
+        body {
+            background-color:#f5f5f5;;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        /* Styles for the header:
+        - The header has a green background, white text, padding, and a box shadow for depth*/
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 30px 10px;
+            text-align: center;
+            width: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            background-image: url("almaty01.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        header h1 {
+            font-size: 48px;
+            margin: 0 0 10px 0;
+            font-style: italic;
+        }
+
+        header h2 {
+            font-size: 24px;
+            margin: 10px 0 0;
+            background-size: cover;
+        }
+       
+    /* Styles for paragraphs:
+    - The paragraphs have a specific color, font weight, size, maximum width, justified text alignment, padding, and margin for better readability */
+        p {
+            color: #3f3f3f;
+            font-weight: 100;
+            font-size: 18px;
+            max-width: 800px;
+            text-align: justify;
+            padding: 0 10px;
+            margin: 20px auto;
+        }
+        /* Styles for the highlight class:
+        - The text with this class is bold and has a specific green color */
+        .highlight {
+            font-weight: bold;
+            color: #4CAF50;
+        }
+            /* Styles for the box1 and box2 classes:
+        - Both boxes have a width of 90%, a maximum width of 800px, auto height, padding, margin, border radius, border color, white text color, a semi-transparent background color, overflow set to auto, background image settings for cover and center positioning, a box shadow for depth, and relative positioning */
+        .box1 , .box2 {
+            width : 90% ;
+            max-width : 800px;
+            height : auto;
+            padding : 20px;
+            margin : 20px 0;
+            border-radius : 12px;
+            border: #3f3f3f;
+            color : white;
+            background-color: rgba(155, 155, 155, 0.4);
+            overflow: auto;
+            background-size: cover;
+            background-position: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+            }
+
+        .box1 p , .box2 p {
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .box1 {
+        background-image: url("almaty03.webp");
+        }
+
+        .box2 {
+        background-image: url("almaty02.webp");
+        }
+
+        </style>
+</head>
+<body>
+    <!-- HTML structure for the webpage about Almaty, including a header, introduction, geography, culture, and economy sections -->
+    <header>
+        <h1>Almaty</h1>
+    <h2>Introduction to the City:</h2>
+    </header>
+    <p>Almaty is the largest city in Kazakhstan, known for its beautiful landscapes and vibrant culture.</p>
+
+    <h2>Geography</h2>
+    <p class="highlight">Almaty is located in the southeastern part of Kazakhstan, surrounded by mountains</p>
+    
+    <div class = "box1">
+    <h2>Culture</h2>
+    <p>Almaty has a rich cultural heritage, with a mix of traditional Kazakh culture and modern lifestyle. </p>
+    </div>
+
+    <div class = "box2">
+        <h2>Economy</h2>
+        <p>Almaty is a major economic hub in Kazakhstan, with a diverse economy that includes finance, trade, and tourism.</p>
+    </div>
+
+
+</body>
+</html>
