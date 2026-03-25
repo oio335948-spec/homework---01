@@ -9,7 +9,7 @@
         - The body has a light gray background, uses the Arial font, and centers its content.
         */
         body {
-            background-color:#f5f5f5;;
+            background-color:#f5f5f5;
             font-family: Arial, Helvetica, sans-serif;
             line-height: 1.6;
             display: flex;
@@ -18,19 +18,17 @@
         }
         /* Styles for the header:
         - The header has a green background, white text, padding, and a box shadow for depth*/
+
         header {
-            background-color: #4CAF50;
+            background-image: url("../Media/almaty01.jpg");
+            background-size: cover;
+            background-position: center;
+             background-color: #4CAF50;
             color: white;
             padding: 30px 10px;
             text-align: center;
             width: 100%;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        header {
-            background-image: url("almaty01.jpg");
-            background-size: cover;
-            background-position: center;
         }
 
         header h1 {
@@ -45,11 +43,11 @@
             background-size: cover;
         }
        
-    /* Styles for paragraphs:
-    - The paragraphs have a specific color, font weight, size, maximum width, justified text alignment, padding, and margin for better readability */
+        /* Styles for paragraphs:
+        - The paragraphs have a specific color, font weight, size, maximum width, justified text alignment, padding, and margin for better readability */
         p {
             color: #3f3f3f;
-            font-weight: 100;
+            font-weight: normal;
             font-size: 18px;
             max-width: 800px;
             text-align: justify;
@@ -71,9 +69,9 @@
             padding : 20px;
             margin : 20px 0;
             border-radius : 12px;
-            border: #3f3f3f;
+            border: 2px solid #3f3f3f;
             color : white;
-            background-color: rgba(155, 155, 155, 0.4);
+            background-color: rgba(63 , 63 , 63 , 0.7);
             overflow: auto;
             background-size: cover;
             background-position: center;
@@ -81,17 +79,18 @@
             position: relative;
             }
 
+        /* Styles for paragraphs inside box1 and box2:*/
         .box1 p , .box2 p {
             color: white;
             background-color: rgba(0, 0, 0, 0.5);
         }
-
+        /*Bacround images */
         .box1 {
-        background-image: url("almaty03.webp");
+        background-image: url("../Media/almaty03.webp");
         }
 
         .box2 {
-        background-image: url("almaty02.webp");
+        background-image: url("../Media/almaty02.webp");
         }
 
         </style>
