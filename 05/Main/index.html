@@ -1,0 +1,19 @@
+import org.springframework.web.bind.annotation.*;
+import java.util.Map;
+
+@RestController
+@RequestMapping("/api/appointments")
+public class AppointmentController {
+
+    @PostMapping("/book")
+    public String bookAppointment(@RequestBody Map<String, String> data) {
+        String name = data.get("name");
+        String service = data.get("service");
+        String date = data.get("date");
+        
+        // 这里的逻辑可以保存到数据库 (MySQL/PostgreSQL)
+        System.out.println("收到预约: " + name + " 选择了 " + service + " 时间: " + date);
+        
+        return "预约成功，" + name + "！我们期待您的光临。";
+    }
+}

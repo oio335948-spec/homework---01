@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            background-color: #f4f4f9;
+        }
+
+        h2 { color: #333; border-left: 5px solid #007bff; padding-left: 10px; }
+        section { background: white; padding: 20px; margin-bottom: 30px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+
+        block-to-inline {
+            display: inline;
+            background-color: #ffeeba; 
+            border: 1px dashed #e67e22;
+            padding: 5px;
+        }
+
+        inline-to-block {
+            display: block;
+            margin: 15px 0; 
+            width: 200px;   
+            border: 3px solid #007bff;
+        }
+        </style>
+</head>
+<body>
+    <h1>HTML - Homework 15</h1>
+
+    <section>
+        <h2>Task 1: Default behavior</h2>
+        <p class = "comment">// block elements (h1, p) automatically wrap and occupy 100% width</p>
+        <h1>This is a block-level heading</h1>
+        <p>This is a block-level paragraph, it will occupy a full line.</p>
+        <p class = "comment">// inline elements (img, a) do not wrap and only occupy the space they need</p>
+        <img src="../Media/meme1.webp" alt="Inline Image" style="width: 1000px; height: auto;">
+        <a href="#">This is an inline link (a).</a>
+    </section>
+
+    <section>
+        <h2>Task 2: Transformation</h2>
+        <p class = "comment">// Using display: inline to make two paragraphs appear on the same line:</p>
+        <p class="block-to-inline">I am the first paragraph transformed to inline.</p>
+        <p class="block-to-inline">I am the second paragraph transformed to inline, I am now on the same line!</p>
+
+        <hr>
+
+        <p class = "comment">// Using display: block to make an inline image behave like a block element:</p>
+        <img src="../Media/meme2.webp" alt="Transformed Image" class="inline-to-block">
+        <span>The image is now a block element, so I am pushed below it.</span>
+    </section>
+
+    <section>
+        <h2>Task 3: Nested & Vertical</h2>
+        <div class="main-container">
+            <p>1. A paragraph inside the container (Block)</p>
+            <img src="../Media/meme3.webp" alt="Small Image">
+            <a href="#">2. A link inside the container (originally Inline, now Block)</a>
+            <p class = "comment">// Note: The link and image are now vertically aligned because they are set to display: block</p>
+        </div>
+</body>
+</html>
