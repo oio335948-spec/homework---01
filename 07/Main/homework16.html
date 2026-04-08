@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f4f4f9;
+}
+
+h1 { 
+    text-align: center; color: #2b3164;
+}
+
+.header {
+    background-color: #a1b5cb;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+
+
+
+h2 { color: #333; border-left: 5px solid #007bff; padding-left: 10px; }
+
+section { background: white; padding: 20px; margin-bottom: 30px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+
+.comment {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+}
+        
+/*Task 1: Pseudo-classes `hover` and `focus`*/
+.form_button {
+   width: 100%;
+   padding: 10px;
+   border: none;
+   border-radius: 4px;
+   background-color: #30639a;
+   color: #fff;
+   font-size: 16px;
+   cursor: pointer;
+   transition: background-color 0.3s;
+}
+
+.form_button:hover {
+   background-color: #0056b3;
+}
+
+.form_input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #f5f0f0;
+    border-radius: 4px;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+.form_input:focus {
+    outline: none;
+    border: 2px solid #3d6591; 
+    background-color: #fff;
+}
+
+/*Task 2: Pseudo-classes `first-child` and `last-child`*/
+
+.list1 li:first-child {
+   background-color: #2f9ba9;
+   font-weight: bold;
+}
+
+.list1 li:last-child {
+   background-color: #897d6b;
+   font-style: italic;
+}
+
+/*Task 3: Applying pseudo-classes to different elements*/
+.list2 :hover {
+    color: #cf5ba3;
+}
+
+
+
+.list2 p:nth-child(odd) {
+    color: #007bff;
+    font-weight: bold;
+}
+
+
+
+.list2 a:focus {
+    color: #dc3545;
+    text-decoration: underline;
+}
+
+/*Task 4: A combination of pseudo-classes*/
+.list-container :first-child:hover {
+    background-color: #007bff;
+    color: white;
+}
+.list-container :last-child {
+    background-color: #6c92c0;
+    color: white;
+}
+.list-container a:hover {
+    background-color: #dc3545;
+    color: white;
+    border : 2px solid #dc3545;
+    
+}
+    </style>
+</head>
+<body>
+    <div class ="header">
+    <h1>HTML - Homework 16</h1>
+    </div>
+    <section class ="form_section">
+       <h2>Task 1:Pseudo-classes `hover` and `focus`</h2>
+       <p class="comment">//Hover over the button to see the hover effect, and click it to see the focus effect.</p>
+   <form class="form">
+       <label for="username" class="form_label">Username</label>
+       <input type="text" id="username" class="form_input" placeholder="Enter your username">
+      
+       <label for="password" class="form_label">Password</label>
+       <input type="password" id="password" class="form_input" placeholder="Enter your password">
+      
+       <button type="submit" class="form_button">Login</button>
+   </form>
+   </section>
+
+   <section>
+       <h2>Task 2:Pseudo-classes `first-child` and `last-child`</h2>
+       <p class="comment">//The first-child and last-child selectors are used to style the first and last child elements of a parent element.</p>
+       <div class="list1">
+          <ul>
+             <li class="list1">Item 1</li>
+             <li class="list1">Item 2</li>
+             <li class="list1">Item 3</li>
+             <li class="list1">Item 4</li>
+             </ul>
+       
+         </div>
+
+    </section>
+
+    <section>
+        <h2> Task 3: Applying pseudo-classes to different elements</h2>
+        
+        <p class="comment">//Hover over the heading, paragraph, and link to see the hover effects.</p>
+        <div class ="list2">
+            <h3>Heading 1</h3>
+            <p class="list2">Item 1</p>
+            <p class="list2">Item 2</p>
+            <p class="list2">Item 3</p>
+            <p class="list2">Item 4</p>
+            
+            
+            <p>This is a paragraph under Heading 1.</p>
+            <a href="#">This is a link under Heading 1.</a>
+        </div>
+
+    </section>
+
+    <section>
+        <h2>Task 4: A combination of pseudo-classes</h2>
+        <p class="comment">//Hover over the list items to see the hover effect, and notice how the first and last items are styled differently.</p>
+        <div class="list-container">
+    <button class="box1">Box 1</button> <input type="text" class="box2" placeholder="Box 2">
+    <a href="#" class="box3">Box 3</a> </div>
+    </section>
+</body>
+</html>
