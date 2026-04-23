@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    padding: 10px;
+    width: auto;
+    margin: 20px auto;
+    background-color: #f4f4f9;
+ 
+}
+
+.header { 
+text-align: center;  color: #2b3164; background-color: #a1b5cb; 
+}
+
+h2 { color: #333; border-left: 5px solid #007bff; padding-left: 10px; }
+
+section { background: white; padding: 20px; margin-bottom: 30px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+
+p { color :#2b3164; font-style: italic ;}
+/*Task 1: Display Property*/
+.block-elements {
+    display: block;
+    background-color: #a1b5cb;
+} 
+
+.inline-elements {
+    display: inline;
+    background-color: #7c8c9c;
+    
+}
+
+.flex {
+    display: flex;
+    background-color: #647382;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/*Task 2*/
+.task2and3 h3 {
+    display: flex;
+    flex-direction: column-reverse;/*nothing is change*/
+/*Task 3*/
+flex-direction: column; 
+flex-wrap: wrap;
+flex-flow: row; 
+
+}
+
+/*Task 4*/
+
+.task4 {
+    display: flex;
+    flex-wrap: wrap;
+    height: 400px;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-between;
+}
+
+/*Task5*/
+.task5 {
+    display: flex;
+    border: 2px solid #000;
+    padding : 10px
+}
+
+.item-div1 {
+    flex-grow: 1;
+    flex-shrink: 2;
+    flex-basis: 0;
+}
+
+.item-div2 {
+    flex-grow: 2;
+    flex-shrink: 1;
+    flex-basis: 0;
+}
+.item-div3 {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+}
+
+/*Task 6*/
+.task6 {
+    display: flex;
+    flex-wrap: wrap;
+}
+.item1 {
+    flex : 0 0 50%;
+    background-color: #a1b5cb;
+}
+.item2 {
+    flex : 1;
+    background-color: #7c8c9c;
+}
+.item3 {
+    flex : 0 0 100px;
+    background-color: #647382;
+}
+
+/*Task 7*/
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/*Task 8*/
+.card-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-shrink: 2;
+    flex-basis:3 ;
+    gap: 20px;
+}
+
+</style>
+
+   
+<body>
+    <div class="header">
+        <h1>FlexBox</h1>
+    </div>
+<section>
+    <h2 id="Task1">Task1 display property</h2>
+    <div class="block-elements">
+        <h1>This is a block-level heading</h1>
+        <p>This is a block-level paragraph, it will occupy a full line.</p>
+    </div>
+    <div class="inline-elements">
+        <span>This is an inline span element.</span>
+        <a href="#">This is an inline link (a).</a>
+    </div>
+    <div class="flex">
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+    </div>
+
+<section>
+<h2 id="Task2and3">Task 2 and 3: Flex Container</h2>
+<div class="task2and3">
+    <h3>1</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien eget nunc efficitur commodo.</p>
+    <span>Span Element</span>
+    <a href="#">Link Element</a>
+</div>
+</section>
+
+<section>
+    
+    <h2 id="Task4">Task 4: Aligning elements</h2>
+    <div class ="box-4">
+        <div class ="item-box1">
+             <p>item 1</p>
+        </div>
+
+        <div class = "item-box2">
+            <p>item2</p>
+         </div>
+
+        <div class = "item-box3">
+            <p>item3</p>
+        </div>
+    </div>
+
+    </section>
+
+    <section>
+        <h2 id="Task5">Task5: flex-grow`, `flex-shrink`, `flex-basis` and flex shorthand</h2>
+    <div class ="task5">
+        <div class ="item-div1">item1</div>
+         <div class ="item-div2">item2</div>
+          <div class ="item-div3">item3</div>
+    </section>
+
+    <section>
+        <h2>Task6: Practical task</h2>
+        <div class="task6">
+            <div class="item1">Item 1</div>
+            <div class="item2">Item 2</div>
+            <div class="item3">Item 3</div>
+        </div>
+    </section>
+
+    <section>
+        <h2 id="Task7">Task 7: Center-aligned navigation menu </h2>
+    <div class = "menu ">
+        <ul>
+            <li><a href="#Task1">Task1</a></li>
+            <li><a href="#Task2and3">Task2and3</a></li>
+            <li><a href="#Task5">Task5</a></li>
+            <li><a href="#Task6">Task6</a></li>
+            <li><a href="#Task7">Task7</a></li>
+        </ul>
+    </div>
+
+    </section>
+
+    <section>
+        <h2>Task 8: Card gallery</h2>
+        <div class="card-gallery">
+            <div class="card"><img src="../Media/meme1.webp" alt="Meme 1"></div>
+            <div class="card"><img src="../Media/meme2.webp" alt="Meme 2"></div>
+            <div class="card"><img src="../Media/meme3.webp" alt="Meme 3"></div>
+        </div>
+    </section>
+</body>
+
+</html>
